@@ -1,23 +1,23 @@
-package cwk4; 
+package cwk4;
+
 import java.io.*;
+
 /**
- * Enumeration class ForceState 
+ * Enumeration class ForceState
  * 
  * @author A.Marczyk
  * @version 02/11/2019
  */
-public enum ForceState implements Serializable
-{
-    DOCKED(" In dock"), ACTIVE(" Active"), DESTROYED (" destroyed");
+public enum ForceState implements Serializable {
+    DOCKED(" In dock"), ACTIVE(" Active"), DESTROYED(" destroyed");
+
     private String state;
-    
-    private ForceState(String st)
-    {
+
+    private ForceState(String st) {
         state = st;
     }
-    
-    public String toString()
-    {
+
+    public String toString() {
         return state;
     }
 }
